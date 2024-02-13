@@ -1,0 +1,48 @@
+/* Estilos de Contacto */
+
+.form-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.data-form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #88303E;
+    border-radius: 8px;
+}
+
+.contact-extras {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.form-control, .form-select, .form-control:focus {
+    background-color: #0c181d98;
+    color: #C9CEBD;
+    border-color: #C9CEBD;
+}
+
+.form-check-input {
+    background-color: #0c181d;
+}
+
+.form-check-input:checked {
+    background-color: #4a242e;
+    border-color: #88303E;
+}
+
+.faq-container {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}

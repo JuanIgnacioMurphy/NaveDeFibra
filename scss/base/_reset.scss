@@ -1,0 +1,39 @@
+/*Reseteo*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+Fuentes
+
+font-family: 'Abril', serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+@font-face {
+    font-family: 'Abril';
+    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+
+
+/* Estilos del body */
+
+body {
+    font-family: 'Poppins';
+    background-color: #0c181d;
+    color: #fffffa;
+    background-image: url(../assets/images/fondonave.jpg);
+    background-size: contain;
+    padding-top: 120px;
+}
+
+
