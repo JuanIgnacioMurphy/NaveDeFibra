@@ -4,7 +4,7 @@ footer {
     margin-top: 150px;
     bottom: 0;
     width: 100%;
-    background-color: #88303e;
+    background-color: $BaseRed;
     color: #fffffa;
     font-size: 15px;
 }
@@ -21,7 +21,7 @@ footer {
     width: 100px;
     text-align: center;
     text-decoration: none;
-    color: #C9CEBD;
+    color: $BaseText;
     font-size: 14px;
-    border: 2px solid #0c181d;
+    border: 2px solid $BackgroundColor;
 }

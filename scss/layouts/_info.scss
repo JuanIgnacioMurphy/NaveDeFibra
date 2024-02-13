@@ -2,9 +2,9 @@
 
 .info-container {
     display: flex;
-    background-color: #4a242ebe;
-    color: #C9CEBD;
-    border: 2px solid #88303E;
+    background-color: $DarkRed;
+    color: $BaseText;
+    border: 2px solid $BaseRed;
     border-radius: 8px;
     justify-content: center;
 }
@@ -79,7 +79,7 @@
 .grid-info {
     position: relative;
     display: grid;
-    border: 4px solid #88303E;
+    border: 4px solid $BaseRed;
     border-radius: 8px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -91,7 +91,7 @@
 
 .info-poster-text {
     position: absolute;
-    background-color: #4a242eb0;
+    background-color: $DarkRed;
     color: #fffffa;
     width: 60%;
     height: 60%;

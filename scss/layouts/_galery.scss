@@ -18,8 +18,8 @@
     position: absolute;
     align-self: flex-start;
     font-family: 'Poppins';
-    color: #C9CEBD;
-    background-color: #88303E;
+    color: $BaseText;
+    background-color: $BaseRed;
     border-radius: 3px;
     border: 2px solid transparent;
     font-size: 30px;
@@ -100,7 +100,7 @@
 
 .grid {
     width: 77%;
-    border: 3px solid #88303E;
+    border: 3px solid $BaseRed;
     border-radius: 8px;
     margin-top: 40px;
     padding: 15px;
@@ -117,7 +117,7 @@
 }
 
 .grid:hover {
-    background-color: #4a242e9a;
+    background-color: $DarkRed;
 }
 
 .box:hover {
@@ -133,16 +133,16 @@
         /* width: 48%; */
         justify-self: end;
         align-self: end;
-        background-color: #88303E;
+        background-color: $BaseRed;
         border: 2px solid transparent;
-        color: #C9CEBD;
+        color: $BaseText;
         font-size: 30px;
     }
 
     .btn-galery:hover {
-        background-color: #0c181d;
-        color: #C9CEBD;
-        border: 2px solid #4a242e;
+        background-color: $BackgroundColor;
+        color: $BaseText;
+        border: 2px solid $DarkRed;
     }
 
 }
@@ -162,10 +162,10 @@
     width: 320px;
     padding: 10px;
     margin: 0;
-    background-color: #4a242e9a;
-    border: 2px solid #88303E;
+    background-color: $DarkRed;
+    border: 2px solid $BaseRed;
     border-radius: 8px;
-    color: #C9CEBD;
+    color: $BaseText;
     text-align: center;
     align-items: center;
     gap: 5px;

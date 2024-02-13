@@ -17,7 +17,7 @@
 .map {
     height: 100%;
     width: 100%;
-    border: 2px solid #88303E;
+    border: 2px solid $BaseRed;
     border-radius: 8px;
 }
 
@@ -28,18 +28,18 @@
 }
 
 .form-control, .form-select, .form-control:focus {
-    background-color: #0c181d98;
-    color: #C9CEBD;
-    border-color: #C9CEBD;
+    background-color: $BackgroundColor;
+    color: $BaseText;
+    border-color: $BaseText;
 }
 
 .form-check-input {
-    background-color: #0c181d;
+    background-color: $BackgroundColor;
 }
 
 .form-check-input:checked {
-    background-color: #4a242e;
-    border-color: #88303E;
+    background-color: $DarkRed;
+    border-color: $BaseRed;
 }
 
 .faq-container {

@@ -16,7 +16,7 @@ main {
 
 h1 {
     font-family: "Abril";
-    color: #C9CEBD;
+    color: $BaseText;
     font-size: 70px;
     align-self: center;
     text-align: center;
@@ -47,8 +47,8 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    color: #C9CEBD;
-    border: 3px solid #88303E;
+    color: $BaseText;
+    border: 3px solid $BaseRed;
     border-radius: 10px;
 }
 
@@ -62,7 +62,7 @@ h1 {
 }
 
 .hero-card:hover {
-    background-color: #0d25309f;
+    background-color: $DarkHover;
 }
 
 /* Estilos del Hero Bilboard */
@@ -78,7 +78,7 @@ h1 {
 
 .otoño-bilboard {
     font-family: "abril";
-    color: #C9CEBD;
+    color: $BaseText;
     font-size: 110px;
     margin-bottom: 0;
     padding: 0;
@@ -87,7 +87,7 @@ h1 {
 
 .invierno-bilboard {
     font-family: "abril";
-    color: #C9CEBD;
+    color: $BaseText;
     font-size: 91px;
     margin-bottom: 0;
     padding: 0;
@@ -96,7 +96,7 @@ h1 {
 
 .año-bilboard {
     font-family: "abril";
-    color: #C9CEBD;
+    color: $BaseText;
     font-size: 120px;
     margin-bottom: 0;
     padding: 0;
@@ -106,14 +106,14 @@ h1 {
 .hero-bilboard p {
     font-family: "poppins";
     font-size: 25px;
-    color: #C9CEBD;
+    color: $BaseText;
     margin-top: 40px;
     text-align: center
 }
 
 .btn-primary {
-    background-color: #88303E;
-    color: #C9CEBD;
+    background-color: $BaseRed;
+    color: $BaseText;
     font-size: 30px;
     border-radius: 2px;
     border: 2px solid transparent;
@@ -123,9 +123,9 @@ h1 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn:active {
-    background-color: #0c181d;
-    color: #C9CEBD;
-    border: 2px solid #4a242e;
+    background-color: $BackgroundColor;
+    color: $BaseText;
+    border: 2px solid $DarkRed;
 }
 
 .btn-check:checked+.btn,
@@ -133,16 +133,16 @@ h1 {
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check)+.btn:active {
-    background-color: #0c181d;
-    color: #C9CEBD;
-    border: 2px solid #4a242e;
+    background-color: $BackgroundColor;
+    color: $BaseText;
+    border: 2px solid $DarkRed;
 }
 
 /* Estilos del banner */
 
 .banner {
     font-family: "abril";
-    color: #C9CEBD;
+    color: $BaseText;
     font-size: 60px;
     text-align: center;
 }
@@ -164,8 +164,8 @@ h1 {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    border: 2px solid #88303E;
-    color: #C9CEBD;
+    border: 2px solid $BaseRed;
+    color: $BaseText;
 }
 
 .card-body {
@@ -190,7 +190,7 @@ h1 {
 }
 
 .card:hover {
-    background-color: #0d25309f;
+    background-color: $DarkHover;
 }
 
 /* Estilos de los extras */
@@ -248,6 +248,6 @@ h1 {
 .player h2 {
     font-family: 'abril';
     font-size: 40px;
-    color: #C9CEBD;
+    color: $BaseText;
     justify-content: center;
 }
