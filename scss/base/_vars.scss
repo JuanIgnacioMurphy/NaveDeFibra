@@ -1,11 +1,24 @@
-// $BackgroundColor:#0c181d;
-// $BaseRed:#88303E;
-// $BaseText:#C9CEBD;
-// $DarkHover:#0d25309f;
-// $DarkRed:#4a242e;
+//Colores
+$BackgroundColor:#0c181d;
+$BaseRed:#992034;
+$BaseText:#C9CEBD;
+$DarkHover:#0d25309f;
+$DarkRed:#4a242e;
 
-$BackgroundColor:#070c27;
-$BaseRed:#206405;
-$BaseText:#e0cffd;
-$DarkHover:#02034167;
-$DarkRed:#1c002e;
+//Fuentes
+
+@font-face {
+    font-family: 'Abril';
+    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+//font-family: 'Abril', serif;
+//font-family: 'Poppins', sans-serif;
+
+$MainFont: 'Poppins', sans-serif;
+$TitleFont: 'Abril';

@@ -7,21 +7,21 @@ footer {
     background-color: $BaseRed;
     color: #fffffa;
     font-size: 15px;
-}
 
-.footer-content {
-    display: flex;
-    gap: 20px;
-    padding: 40px;
-    justify-content: space-around;
-}
+    .footer-content {
+        display: flex;
+        gap: 20px;
+        padding: 40px;
+        justify-content: space-around;
 
-.footer-content a {
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    color: $BaseText;
-    font-size: 14px;
-    border: 2px solid $BackgroundColor;
+        a {
+            padding: 5px;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+            color: $BaseText;
+            font-size: 14px;
+            border: 2px solid $BackgroundColor;
+        }
+    }
 }

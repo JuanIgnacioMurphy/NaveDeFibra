@@ -6,29 +6,12 @@
 }
 
 
-/*
-Fuentes
-
-font-family: 'Abril', serif;
-font-family: 'Poppins', sans-serif;
-*/
-
-@font-face {
-    font-family: 'Abril';
-    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url(../assets/fonts/Poppins-Regular.ttf);
-}
 
 
-
-/* Estilos del body */
+/* Estilos generales y compartidos en varias páginas */
 
 body {
-    font-family: 'Poppins';
+    font-family: $MainFont;
     background-color: $BackgroundColor;
     color: #fffffa;
     background-image: url(../assets/images/fondonave.jpg);
@@ -36,4 +19,24 @@ body {
     padding-top: 120px;
 }
 
+h1 {
+    font-family: "Abril";
+    color: $BaseText;
+    font-size: 70px;
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-h1 {
+    font-size: 80px;
+    margin: auto;
+    border: none;
+}
