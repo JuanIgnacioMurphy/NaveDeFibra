@@ -85,6 +85,7 @@ footer {
   margin-top: 150px;
   bottom: 0;
   width: 100%;
+  height: 100vh;
   background-color: #992034;
   color: #fffffa;
   font-size: 15px;
@@ -361,6 +362,20 @@ footer .footer-content a {
   display: flex;
   gap: 10px;
   justify-content: center;
+}
+.faq-container .contact-extras .item-card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 10px;
+  margin: 0;
+  background-color: #4a242e;
+  border: 2px solid #992034;
+  border-radius: 8px;
+  color: #C9CEBD;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
 }
 
 /* Estilos de la galería */

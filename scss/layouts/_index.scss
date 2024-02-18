@@ -33,83 +33,81 @@
         &:hover {
             background-color: $DarkHover;
         }
+
+        .hero-bilboard {
+            height: 100%;
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 100px 20px 10px 80px;
+
+            .otoño-bilboard {
+                font-family: "abril";
+                color: $BaseText;
+                font-size: 110px;
+                margin-bottom: 0;
+                padding: 0;
+                line-height: 0.7;
+            }
+            
+            .invierno-bilboard {
+                font-family: "abril";
+                color: $BaseText;
+                font-size: 91px;
+                margin-bottom: 0;
+                padding: 0;
+                line-height: 0.7;
+            }
+            
+            .año-bilboard {
+                font-family: "abril";
+                color: $BaseText;
+                font-size: 120px;
+                margin-bottom: 0;
+                padding: 0;
+                line-height: 0.7;
+            }
+
+            .hero-bilboard p {
+                font-family: "poppins";
+                font-size: 25px;
+                color: $BaseText;
+                margin-top: 40px;
+                text-align: center
+            }
+            
+            .btn-primary {
+                background-color: $BaseRed;
+                color: $BaseText;
+                font-size: 30px;
+                border-radius: 2px;
+                border: 2px solid transparent;
+            }
+            
+            .btn-primary:hover,
+            .btn-primary:focus,
+            .btn-primary:active,
+            .btn:active {
+                background-color: $BackgroundColor;
+                color: $BaseText;
+                border: 2px solid $DarkRed;
+            }
+            
+            .btn-check:checked+.btn,
+            .btn.active,
+            .btn.show,
+            .btn:first-child:active,
+            :not(.btn-check)+.btn:active {
+                background-color: $BackgroundColor;
+                color: $BaseText;
+                border: 2px solid $DarkRed;
+            }
+        }
     }
 }
 
 
-
-/* Estilos del Hero Bilboard */
-
-.hero-bilboard {
-    height: 100%;
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 100px 20px 10px 80px;
-}
-
-.otoño-bilboard {
-    font-family: "abril";
-    color: $BaseText;
-    font-size: 110px;
-    margin-bottom: 0;
-    padding: 0;
-    line-height: 0.7;
-}
-
-.invierno-bilboard {
-    font-family: "abril";
-    color: $BaseText;
-    font-size: 91px;
-    margin-bottom: 0;
-    padding: 0;
-    line-height: 0.7;
-}
-
-.año-bilboard {
-    font-family: "abril";
-    color: $BaseText;
-    font-size: 120px;
-    margin-bottom: 0;
-    padding: 0;
-    line-height: 0.7;
-}
-
-.hero-bilboard p {
-    font-family: "poppins";
-    font-size: 25px;
-    color: $BaseText;
-    margin-top: 40px;
-    text-align: center
-}
-
-.btn-primary {
-    background-color: $BaseRed;
-    color: $BaseText;
-    font-size: 30px;
-    border-radius: 2px;
-    border: 2px solid transparent;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn:active {
-    background-color: $BackgroundColor;
-    color: $BaseText;
-    border: 2px solid $DarkRed;
-}
-
-.btn-check:checked+.btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check)+.btn:active {
-    background-color: $BackgroundColor;
-    color: $BaseText;
-    border: 2px solid $DarkRed;
-}
 
 /* Estilos del banner */
 
@@ -127,44 +125,46 @@
     gap: 80px;
     align-items: center;
     justify-content: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 520px;
+        width: 320px;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: 2px solid $BaseRed;
+        color: $BaseText;
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        
+        .card .btn-primary {
+            font-size: 20px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .card-title {
+            font-weight: bold;
+        }
+        
+        .card:hover {
+            background-color: $DarkHover;
+        }
+        
+    }
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 520px;
-    width: 320px;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    border: 2px solid $BaseRed;
-    color: $BaseText;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.card .btn-primary {
-    font-size: 20px;
-}
-
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-title {
-    font-weight: bold;
-}
-
-.card:hover {
-    background-color: $DarkHover;
-}
 
 /* Estilos de los extras */
 
@@ -175,52 +175,54 @@
     gap: 10px;
     justify-content: center;
     width: 100%;
+
+    .poster {
+        display: flex;
+        width: 48%;
+        border-radius: 8px;
+    
+        .poster-img {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+            .poster-text {
+                background-color: #111;
+                opacity: 0.5;
+                font-size: 30px;
+                font-weight: bold;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
 }
 
-.poster {
-    display: flex;
-    width: 48%;
-    border-radius: 8px;
-}
-
-
-.poster-img {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-}
-
-.poster-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.poster-text {
-    background-color: #111;
-    opacity: 0.5;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .player {
     width: 100%;
     height: 100%;
+    
+    h2 {
+        font-family: $TitleFont;
+        font-size: 40px;
+        color: $BaseText;
+        justify-content: center;
+    }
 }
 
-.player h2 {
-    font-family: $TitleFont;
-    font-size: 40px;
-    color: $BaseText;
-    justify-content: center;
-}
