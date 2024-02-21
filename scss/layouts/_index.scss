@@ -20,6 +20,7 @@
         color: $BaseText;
         border: 3px solid $BaseRed;
         border-radius: 10px;
+        transition: .5s;
 
         .hero-carousel {
             height: 100%;
@@ -69,39 +70,12 @@
                 line-height: 0.7;
             }
 
-            .hero-bilboard p {
+            p {
                 font-family: "poppins";
                 font-size: 25px;
                 color: $BaseText;
                 margin-top: 40px;
                 text-align: center
-            }
-
-            .btn-primary {
-                background-color: $BaseRed;
-                color: $BaseText;
-                font-size: 30px;
-                border-radius: 2px;
-                border: 2px solid transparent;
-            }
-
-            .btn-primary:hover,
-            .btn-primary:focus,
-            .btn-primary:active,
-            .btn:active {
-                background-color: $BackgroundColor;
-                color: $BaseText;
-                border: 2px solid $DarkRed;
-            }
-
-            .btn-check:checked+.btn,
-            .btn.active,
-            .btn.show,
-            .btn:first-child:active,
-            :not(.btn-check)+.btn:active {
-                background-color: $BackgroundColor;
-                color: $BaseText;
-                border: 2px solid $DarkRed;
             }
         }
     }
@@ -126,27 +100,11 @@
         border: 2px solid $BaseRed;
         color: $BaseText;
 
+
         .card-body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
-            .btn-primary {
-                background-color: #88303E;
-                color: #C9CEBD;
-                font-size: 24px;
-                border-radius: 2px;
-                border: 2px solid transparent;
-
-                &:hover,
-                &:focus,
-                &:active,
-                .btn:active {
-                    background-color: #0c181d;
-                    color: #C9CEBD;
-                    border: 2px solid #4a242e;
-                }
-            }
         }
 
 
@@ -160,8 +118,9 @@
             font-weight: bold;
         }
 
-        .card:hover {
+        :hover {
             background-color: $DarkHover;
+            transition: .5s;
         }
 
     }

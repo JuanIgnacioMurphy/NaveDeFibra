@@ -46,3 +46,30 @@ main {
     margin: auto;
     border: none;
 }
+
+.btn-primary {
+    background-color: $BaseRed;
+    color: $BaseText;
+    font-size: 24px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn:active {
+    background-color: $BackgroundColor;
+    color: $BaseText;
+    border: 2px solid $DarkRed;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: $BackgroundColor;
+    color: $BaseText;
+    border: 2px solid $DarkRed;
+}

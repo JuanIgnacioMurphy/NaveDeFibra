@@ -54,6 +54,33 @@ main {
   border: none;
 }
 
+.btn-primary {
+  background-color: #992034;
+  color: #C9CEBD;
+  font-size: 24px;
+  border-radius: 2px;
+  border: 2px solid transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn:active {
+  background-color: #0c181d;
+  color: #C9CEBD;
+  border: 2px solid rgba(74, 36, 46, 0.7058823529);
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #0c181d;
+  color: #C9CEBD;
+  border: 2px solid rgba(74, 36, 46, 0.7058823529);
+}
+
 /* Estilos del Navbar */
 .sticky-top {
   position: sticky;
@@ -86,6 +113,11 @@ main {
 .bg-darkred .offcanvas-header {
   background-color: rgba(74, 36, 46, 0.7058823529);
   color: #0c181d;
+}
+
+.logo-navbar:hover {
+  transform: rotate(-30deg);
+  transition: 1s;
 }
 
 /* Estilos del footer */
@@ -136,6 +168,7 @@ footer .footer-content a {
   color: #C9CEBD;
   border: 3px solid #992034;
   border-radius: 10px;
+  transition: 0.5s;
 }
 .hero .hero-card .hero-carousel {
   height: 100%;
@@ -179,36 +212,12 @@ footer .footer-content a {
   padding: 0;
   line-height: 0.7;
 }
-.hero .hero-card .hero-bilboard .hero-bilboard p {
+.hero .hero-card .hero-bilboard p {
   font-family: "poppins";
   font-size: 25px;
   color: #C9CEBD;
   margin-top: 40px;
   text-align: center;
-}
-.hero .hero-card .hero-bilboard .btn-primary {
-  background-color: #992034;
-  color: #C9CEBD;
-  font-size: 30px;
-  border-radius: 2px;
-  border: 2px solid transparent;
-}
-.hero .hero-card .hero-bilboard .btn-primary:hover,
-.hero .hero-card .hero-bilboard .btn-primary:focus,
-.hero .hero-card .hero-bilboard .btn-primary:active,
-.hero .hero-card .hero-bilboard .btn:active {
-  background-color: #0c181d;
-  color: #C9CEBD;
-  border: 2px solid rgba(74, 36, 46, 0.7058823529);
-}
-.hero .hero-card .hero-bilboard .btn-check:checked + .btn,
-.hero .hero-card .hero-bilboard .btn.active,
-.hero .hero-card .hero-bilboard .btn.show,
-.hero .hero-card .hero-bilboard .btn:first-child:active,
-.hero .hero-card .hero-bilboard :not(.btn-check) + .btn:active {
-  background-color: #0c181d;
-  color: #C9CEBD;
-  border: 2px solid rgba(74, 36, 46, 0.7058823529);
 }
 
 /* Estilos del Sidekick */
@@ -234,19 +243,6 @@ footer .footer-content a {
   flex-direction: column;
   justify-content: space-between;
 }
-.sidekick .card .card-body .btn-primary {
-  background-color: #88303E;
-  color: #C9CEBD;
-  font-size: 24px;
-  border-radius: 2px;
-  border: 2px solid transparent;
-}
-.sidekick .card .card-body .btn-primary:hover, .sidekick .card .card-body .btn-primary:focus, .sidekick .card .card-body .btn-primary:active,
-.sidekick .card .card-body .btn-primary .btn:active {
-  background-color: #0c181d;
-  color: #C9CEBD;
-  border: 2px solid #4a242e;
-}
 .sidekick .card img {
   width: 100%;
   height: 250px;
@@ -255,8 +251,9 @@ footer .footer-content a {
 .sidekick .card .card-title {
   font-weight: bold;
 }
-.sidekick .card .card:hover {
+.sidekick .card :hover {
   background-color: rgba(13, 37, 48, 0.6235294118);
+  transition: 0.5s;
 }
 
 /* Estilos de los extras */
@@ -372,15 +369,19 @@ footer .footer-content a {
 /* Estilos de la galería */
 .grid-container .g-barrio:hover {
   background-color: rgba(128, 128, 128, 0.5607843137);
+  transition: 1s;
 }
 .grid-container .g-musica:hover {
-  background-color: rgba(74, 36, 46, 0.7058823529);
+  background-color: rgba(170, 25, 49, 0.7450980392);
+  transition: 1s;
 }
 .grid-container .g-cine:hover {
-  background-color: rgba(219, 161, 52, 0.6784313725);
+  background-color: rgba(219, 161, 52, 0.5960784314);
+  transition: 1s;
 }
 .grid-container .g-cultura:hover {
-  background-color: rgba(18, 18, 68, 0.5803921569);
+  background-color: rgba(68, 18, 68, 0.6509803922);
+  transition: 1s;
 }
 .grid-container .colection-name {
   margin-top: 40px;
@@ -463,6 +464,7 @@ footer .footer-content a {
   border: 2px solid transparent;
   color: #C9CEBD;
   font-size: 30px;
+  transition: 0.3s;
 }
 .grid-container .grid .box:hover .btn-galery:hover {
   background-color: #0c181d;
@@ -672,6 +674,20 @@ footer .footer-content a {
   border: 2px solid #992034;
   border-radius: 8px;
 }
+.shop-container .shop-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.shop-container h2 {
+  margin: 60px 0px 10px 0px;
+}
+.shop-container .order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
 
 .form-select:focus {
   background-color: #0c181d;
@@ -679,21 +695,21 @@ footer .footer-content a {
   border-color: #C9CEBD;
 }
 
-.shop-container h2 {
-  margin: 60px 0px 10px 0px;
+.form-control,
+.form-select,
+.form-control:focus {
+  background-color: #0c181d;
+  color: #C9CEBD;
+  border-color: #C9CEBD;
 }
 
-.shop-form {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
+.form-check-input {
+  background-color: #0c181d;
 }
 
-.order-form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px;
+.form-check-input:checked {
+  background-color: rgba(74, 36, 46, 0.7058823529);
+  border-color: #992034;
 }
 
 .client-form {
@@ -704,6 +720,37 @@ footer .footer-content a {
 .shop-closer {
   margin-top: 80px;
   padding: 60px;
+}
+
+.follow-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(13, 37, 48, 0.6235294118);
+  border: 2px solid #992034;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.follow-container .follow-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  padding: 10px;
+}
+.follow-container .follow-box p {
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+  height: 100%;
+  background-color: rgba(74, 36, 46, 0.7058823529);
+  border: 2px solid #992034;
+  border-radius: 8px;
 }
 
 /* Media Queries */

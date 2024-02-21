@@ -11,7 +11,25 @@
     background-color: $DarkRed;
     border: 2px solid $BaseRed;
     border-radius: 8px;
+
+    .shop-form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 60px 0px 10px 0px;
+    }
+
+    .order-form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
 }
+
 
 .form-select:focus {
     background-color: $BackgroundColor;
@@ -19,22 +37,23 @@
     border-color: $BaseText;
 }
 
-.shop-container h2 {
-    margin: 60px 0px 10px 0px;
+.form-control,
+.form-select,
+.form-control:focus {
+    background-color: $BackgroundColor;
+    color: $BaseText;
+    border-color: $BaseText;
 }
 
-.shop-form {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
+.form-check-input {
+    background-color: $BackgroundColor;
 }
 
-.order-form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
+.form-check-input:checked {
+    background-color: $DarkRed;
+    border-color: $BaseRed;
 }
+
 
 .client-form {
     padding: 10px;
@@ -44,4 +63,33 @@
 .shop-closer    {
     margin-top: 80px;
     padding: 60px;
+}
+
+.follow-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: $DarkHover;
+    border: 2px solid $BaseRed;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+        .follow-box {
+            @include flex(row, space-between, center, 20px);
+            font-size: 16px;
+            padding: 10px;
+
+            p {
+                padding: 10px;
+                text-align: center;
+                width: 33%;
+                height: 100%;
+                background-color: $DarkRed;
+                border: 2px solid $BaseRed;
+                border-radius: 8px;
+            }
+        }
 }
