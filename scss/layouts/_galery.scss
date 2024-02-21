@@ -1,20 +1,53 @@
 /* Estilos de la galería */
-.grid {
-    width: 77%;
-    border: 3px solid $BaseRed;
-    border-radius: 8px;
-    margin-top: 40px;
-    padding: 15px;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    gap: 15px;
-    grid-template-areas:
-        'a1 a2 a3'
-        'a4 a5 a6'
-        'a7 a8 a9'
-        'a10 a11 a12';
+
+$styles: (
+    v1: $DarkRed,
+    v2: #ce910ea6,
+    v3: #2b2a249f,
+    v4: $DarkHover
+);
+
+.grid-container {
+
+    .g-barrio:hover {
+        background-color: #8080808f;
+    }
+
+    .g-musica:hover {
+        background-color: $DarkRed;
+    }
+
+    .g-cine:hover {
+        background-color: #dba134ad;
+    }
+
+    .g-cultura:hover {
+        background-color: #12124494;
+    }
+
+    .colection-name {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-family: $TitleFont;
+        font-size: 60px;
+        color: $BaseText;
+        text-align: center;
+    }
+
+    .grid {
+        width: 77%;
+        border: 3px solid $BaseRed;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 15px;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 15px;
+        grid-template-areas:
+            'a1 a2 a3'
+            'a4 a5 a6';
 
         .box {
             width: 100%;
@@ -29,7 +62,7 @@
             border-radius: 8px;
             border: 1px solid white;
 
-            h2 {
+            h3 {
                 position: absolute;
                 align-self: flex-start;
                 font-family: $MainFont;
@@ -65,11 +98,11 @@
             }
 
             &:hover {
-                h2 {
+                h3 {
                     color: transparent;
                     background-color: transparent;
                 }
-            
+
                 .btn-galery {
                     margin: 10px;
                     padding: 5px;
@@ -87,61 +120,35 @@
                         color: $BaseText;
                         border: 2px solid $DarkRed;
                     }
-                }       
+                }
             }
         }
-        
+
         .b1 {
             grid-area: a1;
         }
-        
+
         .b2 {
             grid-area: a2;
         }
-        
+
         .b3 {
             grid-area: a3;
         }
-        
+
         .b4 {
             grid-area: a4;
         }
-        
+
         .b5 {
             grid-area: a5;
         }
-        
+
         .b6 {
             grid-area: a6;
         }
-        
-        .b7 {
-            grid-area: a7;
-        }
-        
-        .b8 {
-            grid-area: a8;
-        }
-        
-        .b9 {
-            grid-area: a9;
-        }
-        
-        .b10 {
-            grid-area: a10;
-        }
-        
-        .b11 {
-            grid-area: a11;
-        }
-        
-        .b12 {
-            grid-area: a12;
-        }
+    }
 
-        &:hover {
-            background-color: $DarkRed;
-        }
 }
 
 
@@ -152,24 +159,33 @@
     justify-content: center;
     gap: 20px;
 
-    .item-card {
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        padding: 10px;
-        margin: 0;
-        background-color: $DarkRed;
-        border: 2px solid $BaseRed;
-        border-radius: 8px;
-        color: $BaseText;
-        text-align: center;
-        align-items: center;
-        gap: 5px;
+    @each $key, $value in $styles {
+        .item-card-#{$key} {
+            background-color: $value;
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            padding: 10px;
+            margin: 0;
+            border: 2px solid $BaseRed;
+            border-radius: 8px;
+            color: $BaseText;
+            text-align: center;
+            align-items: center;
+            gap: 5px;
 
-        h2 {
-            font-weight: bold;
-            font-size: 28px;
-            justify-self: flex-start;
+            h3 {
+                font-weight: bold;
+                font-size: 28px;
+                justify-self: flex-start;
+            }
         }
     }
 }
+
+
+
+
+// .g-barrio:hover {
+//     background-color: gray;
+// }

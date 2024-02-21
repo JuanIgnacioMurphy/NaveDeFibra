@@ -6,8 +6,6 @@
 }
 
 
-
-
 /* Estilos generales y compartidos en varias páginas */
 
 body {
@@ -20,7 +18,7 @@ body {
 }
 
 h1 {
-    font-family: "Abril";
+    font-family: $TitleFont;
     color: $BaseText;
     font-size: 70px;
     align-self: center;
@@ -29,10 +27,18 @@ h1 {
     margin: 10px;
 }
 
+.banner {
+    font-family: $TitleFont;
+    color: $BaseText;
+    font-size: 60px;
+    text-align: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .main-h1 {

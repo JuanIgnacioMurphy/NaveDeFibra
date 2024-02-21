@@ -34,10 +34,18 @@ h1 {
   margin: 10px;
 }
 
+.banner {
+  font-family: "Abril";
+  color: #C9CEBD;
+  font-size: 60px;
+  text-align: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .main-h1 {
@@ -85,7 +93,8 @@ footer {
   margin-top: 150px;
   bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 300xp;
+  min-height: fit-content;
   background-color: #992034;
   color: #fffffa;
   font-size: 15px;
@@ -138,9 +147,7 @@ footer .footer-content a {
 .hero .hero-card:hover {
   background-color: rgba(13, 37, 48, 0.6235294118);
 }
-
-/* Estilos del Hero Bilboard */
-.hero-bilboard {
+.hero .hero-card .hero-bilboard {
   height: 100%;
   width: 48%;
   display: flex;
@@ -148,8 +155,7 @@ footer .footer-content a {
   flex-wrap: wrap;
   padding: 100px 20px 10px 80px;
 }
-
-.otoño-bilboard {
+.hero .hero-card .hero-bilboard .otoño-bilboard {
   font-family: "abril";
   color: #C9CEBD;
   font-size: 110px;
@@ -157,8 +163,7 @@ footer .footer-content a {
   padding: 0;
   line-height: 0.7;
 }
-
-.invierno-bilboard {
+.hero .hero-card .hero-bilboard .invierno-bilboard {
   font-family: "abril";
   color: #C9CEBD;
   font-size: 91px;
@@ -166,8 +171,7 @@ footer .footer-content a {
   padding: 0;
   line-height: 0.7;
 }
-
-.año-bilboard {
+.hero .hero-card .hero-bilboard .año-bilboard {
   font-family: "abril";
   color: #C9CEBD;
   font-size: 120px;
@@ -175,48 +179,36 @@ footer .footer-content a {
   padding: 0;
   line-height: 0.7;
 }
-
-.hero-bilboard p {
+.hero .hero-card .hero-bilboard .hero-bilboard p {
   font-family: "poppins";
   font-size: 25px;
   color: #C9CEBD;
   margin-top: 40px;
   text-align: center;
 }
-
-.btn-primary {
+.hero .hero-card .hero-bilboard .btn-primary {
   background-color: #992034;
   color: #C9CEBD;
   font-size: 30px;
   border-radius: 2px;
   border: 2px solid transparent;
 }
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn:active {
+.hero .hero-card .hero-bilboard .btn-primary:hover,
+.hero .hero-card .hero-bilboard .btn-primary:focus,
+.hero .hero-card .hero-bilboard .btn-primary:active,
+.hero .hero-card .hero-bilboard .btn:active {
   background-color: #0c181d;
   color: #C9CEBD;
   border: 2px solid #4a242e;
 }
-
-.btn-check:checked + .btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check) + .btn:active {
+.hero .hero-card .hero-bilboard .btn-check:checked + .btn,
+.hero .hero-card .hero-bilboard .btn.active,
+.hero .hero-card .hero-bilboard .btn.show,
+.hero .hero-card .hero-bilboard .btn:first-child:active,
+.hero .hero-card .hero-bilboard :not(.btn-check) + .btn:active {
   background-color: #0c181d;
   color: #C9CEBD;
   border: 2px solid #4a242e;
-}
-
-/* Estilos del banner */
-.banner {
-  font-family: "abril";
-  color: #C9CEBD;
-  font-size: 60px;
-  text-align: center;
 }
 
 /* Estilos del Sidekick */
@@ -226,8 +218,7 @@ footer .footer-content a {
   align-items: center;
   justify-content: center;
 }
-
-.card {
+.sidekick .card {
   display: flex;
   flex-direction: column;
   height: 520px;
@@ -238,28 +229,23 @@ footer .footer-content a {
   border: 2px solid #992034;
   color: #C9CEBD;
 }
-
-.card-body {
+.sidekick .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.card .btn-primary {
+.sidekick .card .card .btn-primary {
   font-size: 20px;
 }
-
-.card img {
+.sidekick .card .card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
-
-.card-title {
+.sidekick .card .card-title {
   font-weight: bold;
 }
-
-.card:hover {
+.sidekick .card .card:hover {
   background-color: rgba(13, 37, 48, 0.6235294118);
 }
 
@@ -272,14 +258,12 @@ footer .footer-content a {
   justify-content: center;
   width: 100%;
 }
-
-.poster {
+.extras .poster {
   display: flex;
   width: 48%;
   border-radius: 8px;
 }
-
-.poster-img {
+.extras .poster .poster-img {
   position: relative;
   width: 100%;
   display: flex;
@@ -287,15 +271,13 @@ footer .footer-content a {
   justify-content: center;
   border-radius: 8px;
 }
-
-.poster-img img {
+.extras .poster .poster-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
-
-.poster-text {
+.extras .poster .poster-img .poster-text {
   background-color: #111;
   opacity: 0.5;
   font-size: 30px;
@@ -312,7 +294,6 @@ footer .footer-content a {
   width: 100%;
   height: 100%;
 }
-
 .player h2 {
   font-family: "Abril";
   font-size: 40px;
@@ -379,20 +360,40 @@ footer .footer-content a {
 }
 
 /* Estilos de la galería */
-.grid {
+.grid-container .g-barrio:hover {
+  background-color: rgba(128, 128, 128, 0.5607843137);
+}
+.grid-container .g-musica:hover {
+  background-color: #4a242e;
+}
+.grid-container .g-cine:hover {
+  background-color: rgba(219, 161, 52, 0.6784313725);
+}
+.grid-container .g-cultura:hover {
+  background-color: rgba(18, 18, 68, 0.5803921569);
+}
+.grid-container .colection-name {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-family: "Abril";
+  font-size: 60px;
+  color: #C9CEBD;
+  text-align: center;
+}
+.grid-container .grid {
   width: 77%;
   border: 3px solid #992034;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 15px;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   gap: 15px;
-  grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9" "a10 a11 a12";
+  grid-template-areas: "a1 a2 a3" "a4 a5 a6";
 }
-.grid .box {
+.grid-container .grid .box {
   width: 100%;
   height: 100%;
   max-height: 350px;
@@ -405,7 +406,7 @@ footer .footer-content a {
   border-radius: 8px;
   border: 1px solid white;
 }
-.grid .box h2 {
+.grid-container .grid .box h3 {
   position: absolute;
   align-self: flex-start;
   font-family: "Poppins", sans-serif;
@@ -417,7 +418,7 @@ footer .footer-content a {
   padding: 5px;
   margin: 10px;
 }
-.grid .box img {
+.grid-container .grid .box img {
   width: 100%;
   height: 100%;
   max-width: 350px;
@@ -425,7 +426,7 @@ footer .footer-content a {
   object-fit: cover;
   border-radius: 8px;
 }
-.grid .box .btn-galery {
+.grid-container .grid .box .btn-galery {
   margin: 10px;
   padding: 5px;
   position: absolute;
@@ -437,11 +438,11 @@ footer .footer-content a {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
 }
-.grid .box:hover h2 {
+.grid-container .grid .box:hover h3 {
   color: transparent;
   background-color: transparent;
 }
-.grid .box:hover .btn-galery {
+.grid-container .grid .box:hover .btn-galery {
   margin: 10px;
   padding: 5px;
   position: absolute;
@@ -453,49 +454,28 @@ footer .footer-content a {
   color: #C9CEBD;
   font-size: 30px;
 }
-.grid .box:hover .btn-galery:hover {
+.grid-container .grid .box:hover .btn-galery:hover {
   background-color: #0c181d;
   color: #C9CEBD;
   border: 2px solid #4a242e;
 }
-.grid .b1 {
+.grid-container .grid .b1 {
   grid-area: a1;
 }
-.grid .b2 {
+.grid-container .grid .b2 {
   grid-area: a2;
 }
-.grid .b3 {
+.grid-container .grid .b3 {
   grid-area: a3;
 }
-.grid .b4 {
+.grid-container .grid .b4 {
   grid-area: a4;
 }
-.grid .b5 {
+.grid-container .grid .b5 {
   grid-area: a5;
 }
-.grid .b6 {
+.grid-container .grid .b6 {
   grid-area: a6;
-}
-.grid .b7 {
-  grid-area: a7;
-}
-.grid .b8 {
-  grid-area: a8;
-}
-.grid .b9 {
-  grid-area: a9;
-}
-.grid .b10 {
-  grid-area: a10;
-}
-.grid .b11 {
-  grid-area: a11;
-}
-.grid .b12 {
-  grid-area: a12;
-}
-.grid:hover {
-  background-color: #4a242e;
 }
 
 .goods-details {
@@ -505,13 +485,13 @@ footer .footer-content a {
   justify-content: center;
   gap: 20px;
 }
-.goods-details .item-card {
+.goods-details .item-card-v1 {
+  background-color: #4a242e;
   display: flex;
   flex-direction: column;
   width: 320px;
   padding: 10px;
   margin: 0;
-  background-color: #4a242e;
   border: 2px solid #992034;
   border-radius: 8px;
   color: #C9CEBD;
@@ -519,7 +499,64 @@ footer .footer-content a {
   align-items: center;
   gap: 5px;
 }
-.goods-details .item-card h2 {
+.goods-details .item-card-v1 h3 {
+  font-weight: bold;
+  font-size: 28px;
+  justify-self: flex-start;
+}
+.goods-details .item-card-v2 {
+  background-color: rgba(206, 145, 14, 0.6509803922);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid #992034;
+  border-radius: 8px;
+  color: #C9CEBD;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+.goods-details .item-card-v2 h3 {
+  font-weight: bold;
+  font-size: 28px;
+  justify-self: flex-start;
+}
+.goods-details .item-card-v3 {
+  background-color: rgba(43, 42, 36, 0.6235294118);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid #992034;
+  border-radius: 8px;
+  color: #C9CEBD;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+.goods-details .item-card-v3 h3 {
+  font-weight: bold;
+  font-size: 28px;
+  justify-self: flex-start;
+}
+.goods-details .item-card-v4 {
+  background-color: rgba(13, 37, 48, 0.6235294118);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid #992034;
+  border-radius: 8px;
+  color: #C9CEBD;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+.goods-details .item-card-v4 h3 {
   font-weight: bold;
   font-size: 28px;
   justify-self: flex-start;
@@ -534,19 +571,16 @@ footer .footer-content a {
   border-radius: 8px;
   justify-content: center;
 }
-
-.info-logo {
+.info-container .info-logo {
   width: 100%;
   height: 100%;
 }
-
-.info-bilboard {
+.info-container .info-bilboard {
   font-size: 20px;
   margin: 10px;
   padding: 10px;
 }
-
-.info-bilboard h2 {
+.info-container .info-bilboard h2 {
   font-family: "Abril";
   font-size: 40px;
   margin-bottom: 30px;
@@ -561,47 +595,7 @@ footer .footer-content a {
   height: 100%;
   object-fit: cover;
 }
-
-.info-box {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.info-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.ib1 {
-  grid-area: a1;
-}
-
-.ib2 {
-  grid-area: a2;
-}
-
-.ib3 {
-  grid-area: a3;
-}
-
-.ib4 {
-  grid-area: a4;
-}
-
-.ib5 {
-  grid-area: a5;
-}
-
-.ib6 {
-  grid-area: a6;
-}
-
-.grid-info {
+.info-poster .grid-info {
   position: relative;
   display: grid;
   border: 4px solid #992034;
@@ -610,7 +604,37 @@ footer .footer-content a {
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "a2 a1 a3" "a5 a1 a6" "a4 a4 a6";
 }
-
+.info-poster .grid-info .info-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.info-poster .grid-info .info-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-poster .grid-info .ib1 {
+  grid-area: a1;
+}
+.info-poster .grid-info .ib2 {
+  grid-area: a2;
+}
+.info-poster .grid-info .ib3 {
+  grid-area: a3;
+}
+.info-poster .grid-info .ib4 {
+  grid-area: a4;
+}
+.info-poster .grid-info .ib5 {
+  grid-area: a5;
+}
+.info-poster .grid-info .ib6 {
+  grid-area: a6;
+}
 .info-poster-text {
   position: absolute;
   background-color: #4a242e;
