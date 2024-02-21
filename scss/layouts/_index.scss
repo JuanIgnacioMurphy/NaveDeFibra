@@ -50,7 +50,7 @@
                 padding: 0;
                 line-height: 0.7;
             }
-            
+
             .invierno-bilboard {
                 font-family: "abril";
                 color: $BaseText;
@@ -59,7 +59,7 @@
                 padding: 0;
                 line-height: 0.7;
             }
-            
+
             .año-bilboard {
                 font-family: "abril";
                 color: $BaseText;
@@ -76,7 +76,7 @@
                 margin-top: 40px;
                 text-align: center
             }
-            
+
             .btn-primary {
                 background-color: $BaseRed;
                 color: $BaseText;
@@ -84,7 +84,7 @@
                 border-radius: 2px;
                 border: 2px solid transparent;
             }
-            
+
             .btn-primary:hover,
             .btn-primary:focus,
             .btn-primary:active,
@@ -93,7 +93,7 @@
                 color: $BaseText;
                 border: 2px solid $DarkRed;
             }
-            
+
             .btn-check:checked+.btn,
             .btn.active,
             .btn.show,
@@ -130,27 +130,40 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            .btn-primary {
+                background-color: #88303E;
+                color: #C9CEBD;
+                font-size: 24px;
+                border-radius: 2px;
+                border: 2px solid transparent;
+
+                &:hover,
+                &:focus,
+                &:active,
+                .btn:active {
+                    background-color: #0c181d;
+                    color: #C9CEBD;
+                    border: 2px solid #4a242e;
+                }
+            }
         }
-        
-        
-        .card .btn-primary {
-            font-size: 20px;
-        }
-        
-        .card img {
+
+
+        img {
             width: 100%;
             height: 250px;
             object-fit: cover;
         }
-        
+
         .card-title {
             font-weight: bold;
         }
-        
+
         .card:hover {
             background-color: $DarkHover;
         }
-        
+
     }
 }
 
@@ -169,7 +182,7 @@
         display: flex;
         width: 48%;
         border-radius: 8px;
-    
+
         .poster-img {
             position: relative;
             width: 100%;
@@ -206,7 +219,7 @@
 .player {
     width: 100%;
     height: 100%;
-    
+
     h2 {
         font-family: $TitleFont;
         font-size: 40px;
@@ -214,4 +227,3 @@
         justify-content: center;
     }
 }
-

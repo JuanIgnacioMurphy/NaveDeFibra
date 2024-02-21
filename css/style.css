@@ -84,7 +84,7 @@ main {
   border-bottom: 10px solid #0c181d;
 }
 .bg-darkred .offcanvas-header {
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   color: #0c181d;
 }
 
@@ -199,7 +199,7 @@ footer .footer-content a {
 .hero .hero-card .hero-bilboard .btn:active {
   background-color: #0c181d;
   color: #C9CEBD;
-  border: 2px solid #4a242e;
+  border: 2px solid rgba(74, 36, 46, 0.7058823529);
 }
 .hero .hero-card .hero-bilboard .btn-check:checked + .btn,
 .hero .hero-card .hero-bilboard .btn.active,
@@ -208,7 +208,7 @@ footer .footer-content a {
 .hero .hero-card .hero-bilboard :not(.btn-check) + .btn:active {
   background-color: #0c181d;
   color: #C9CEBD;
-  border: 2px solid #4a242e;
+  border: 2px solid rgba(74, 36, 46, 0.7058823529);
 }
 
 /* Estilos del Sidekick */
@@ -234,10 +234,20 @@ footer .footer-content a {
   flex-direction: column;
   justify-content: space-between;
 }
-.sidekick .card .card .btn-primary {
-  font-size: 20px;
+.sidekick .card .card-body .btn-primary {
+  background-color: #88303E;
+  color: #C9CEBD;
+  font-size: 24px;
+  border-radius: 2px;
+  border: 2px solid transparent;
 }
-.sidekick .card .card img {
+.sidekick .card .card-body .btn-primary:hover, .sidekick .card .card-body .btn-primary:focus, .sidekick .card .card-body .btn-primary:active,
+.sidekick .card .card-body .btn-primary .btn:active {
+  background-color: #0c181d;
+  color: #C9CEBD;
+  border: 2px solid #4a242e;
+}
+.sidekick .card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -331,7 +341,7 @@ footer .footer-content a {
   background-color: #0c181d;
 }
 .form-container .form-check-input:checked {
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   border-color: #992034;
 }
 
@@ -350,7 +360,7 @@ footer .footer-content a {
   width: 320px;
   padding: 10px;
   margin: 0;
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   border: 2px solid #992034;
   border-radius: 8px;
   color: #C9CEBD;
@@ -364,7 +374,7 @@ footer .footer-content a {
   background-color: rgba(128, 128, 128, 0.5607843137);
 }
 .grid-container .g-musica:hover {
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
 }
 .grid-container .g-cine:hover {
   background-color: rgba(219, 161, 52, 0.6784313725);
@@ -457,7 +467,7 @@ footer .footer-content a {
 .grid-container .grid .box:hover .btn-galery:hover {
   background-color: #0c181d;
   color: #C9CEBD;
-  border: 2px solid #4a242e;
+  border: 2px solid rgba(74, 36, 46, 0.7058823529);
 }
 .grid-container .grid .b1 {
   grid-area: a1;
@@ -486,7 +496,7 @@ footer .footer-content a {
   gap: 20px;
 }
 .goods-details .item-card-v1 {
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -565,7 +575,7 @@ footer .footer-content a {
 /* Estilos del Info */
 .info-container {
   display: flex;
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   color: #C9CEBD;
   border: 2px solid #992034;
   border-radius: 8px;
@@ -637,7 +647,7 @@ footer .footer-content a {
 }
 .info-poster-text {
   position: absolute;
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   color: #fffffa;
   width: 60%;
   height: 60%;
@@ -658,7 +668,7 @@ footer .footer-content a {
   flex-wrap: wrap;
   width: 70%;
   align-items: center;
-  background-color: #4a242e;
+  background-color: rgba(74, 36, 46, 0.7058823529);
   border: 2px solid #992034;
   border-radius: 8px;
 }
