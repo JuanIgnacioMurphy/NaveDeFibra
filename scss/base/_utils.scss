@@ -5,3 +5,14 @@
     align-items: $align;
     gap: $gap;
 }
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translate(0, 20%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

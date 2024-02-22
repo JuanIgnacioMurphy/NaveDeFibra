@@ -25,6 +25,10 @@ h1 {
     text-align: center;
     width: 80%;
     margin: 10px;
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: .6s;
 }
 
 .banner {

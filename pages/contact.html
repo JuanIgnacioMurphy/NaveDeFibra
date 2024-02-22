@@ -11,6 +11,9 @@
 
     <!--Link al css-->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!--Link al AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contacto</title>
 </head>
 
@@ -21,7 +24,7 @@
             <section class="container-fluid">
                 <div class="contenedor-de-imagen">
                     <a class="navbar-brand" href="../index.html">
-                        <img class="logo-navbar" src="../assets/images/nave-logo.png" alt="logonave" height="80">
+                        <img class="logo-navbar" src="../assets/images/nave-logo.png" alt="logonave" height="80" data-aos="fade-down-right" data-aos-duration="1000">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -162,6 +165,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!--Script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

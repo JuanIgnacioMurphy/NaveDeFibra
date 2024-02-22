@@ -7,6 +7,15 @@
   font-family: "Poppins";
   src: url(../assets/fonts/Poppins-Regular.ttf);
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Reseteo*/
 * {
   padding: 0;
@@ -32,6 +41,10 @@ h1 {
   text-align: center;
   width: 80%;
   margin: 10px;
+  animation-name: appear;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 0.6s;
 }
 
 .banner {
@@ -106,7 +119,7 @@ main {
 .bg-darkred .nav-link {
   color: #C9CEBD;
   border-bottom: 10px solid transparent;
-  transition: 1s;
+  transition: 0.7s;
 }
 .bg-darkred .nav-link:hover {
   border-bottom: 10px solid #0c181d;
@@ -328,17 +341,17 @@ footer .footer-content a {
   border: 2px solid #992034;
   border-radius: 8px;
 }
-.form-container .form-control,
-.form-container .form-select,
-.form-container .form-control:focus {
+.form-container .data-form .form-control,
+.form-container .data-form .form-select,
+.form-container .data-form .form-control:focus {
   background-color: #0c181d;
   color: #C9CEBD;
   border-color: #C9CEBD;
 }
-.form-container .form-check-input {
+.form-container .data-form .form-check-input {
   background-color: #0c181d;
 }
-.form-container .form-check-input:checked {
+.form-container .data-form .form-check-input:checked {
   background-color: rgba(74, 36, 46, 0.7058823529);
   border-color: #992034;
 }
@@ -589,7 +602,7 @@ footer .footer-content a {
   height: 100%;
 }
 .info-container .info-bilboard {
-  font-size: 20px;
+  font-size: 15px;
   margin: 10px;
   padding: 10px;
 }
@@ -755,7 +768,72 @@ footer .footer-content a {
 }
 
 /* Media Queries */
+@media (max-width: 1208px) {
+  .hero {
+    flex-direction: column;
+    margin: 0;
+  }
+  .hero .hero-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .hero .hero-card .hero-carousel {
+    width: 80%;
+  }
+  .hero .hero-card .hero-bilboard {
+    margin-top: 40px;
+    align-self: center;
+    justify-self: center;
+    padding: 30px 0 0 0;
+  }
+  .sidekick {
+    padding-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center height 60%;
+  }
+  .sidekick .card {
+    width: 70%;
+  }
+  .sidekick .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .extras {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .extras .poster {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    margin: 0;
+  }
+  .hero .hero-card {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .hero .hero-card .hero-carousel {
+    width: 80%;
+  }
+  .hero .hero-card .hero-bilboard {
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    padding: 0px 0 0 0;
+  }
   .form-container {
     flex-direction: column;
     align-items: center;

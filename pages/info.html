@@ -12,6 +12,9 @@
     <!--Link al css-->
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <!--Link al AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sobre nosotros</title>
 </head>
 
@@ -22,7 +25,8 @@
             <section class="container-fluid">
                 <div class="contenedor-de-imagen">
                     <a class="navbar-brand" href="../index.html">
-                        <img class="logo-navbar" src="../assets/images/nave-logo.png" alt="logonave" height="80">
+                        <img class="logo-navbar" src="../assets/images/nave-logo.png" alt="logonave" height="80"
+                            data-aos="fade-down-right" data-aos-duration="1000">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -74,10 +78,11 @@
             <article class="info-bilboard">
                 <h2>Amamos el barrio, sentimos lo que hacemos, hacemos lo que sentimos</h2>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni debitis hic commodi laboriosam
-                    obcaecati ratione ipsum excepturi vero, voluptatibus vel eius eveniet, soluta sunt voluptas. Ea,
-                    eos, aspernatur ducimus exercitationem dolore reiciendis cumque odio explicabo repellendus magnam
-                    similique ipsa dolores distinctio aliquid ipsum nisi beatae harum nostrum porro consectetur est!</p>
+                <p> Como la Nave del capitán Beto, estamos hechos en <b>Haedo</b>, glorioso Oeste de la Provincia de Buenos Aires, una de las cunas del Rock Nacional, en donde está el agite, los barrios de los que se enamoraron Cortazar y Luca Prodan. Por esto y por muchas cosas más es que estamos orgullosos de ser de acá y lo hicimos proyecto. 
+
+                Trabajamos con artístas de la zona, pensamos qué nos inspira, diseñamos y lo hacemos pilcha para llevar magia del Oeste a todos lados.
+                    
+                Nuestra marca es una marca familiar, creada entre primos, amigos y gente que nos quiere mucho. Habiendo nacido de tanto es que queremos transmitirlo de la misma manera. A nuestros colaboradores, clientes, clienteas y todos los que se siguen sumando a esta Nave que no para de ir para arriba. </p>
 
             </article>
         </section>
@@ -114,12 +119,16 @@
 
             </article>
 
-            <article class="info-poster-text">
+            <article class="info-poster-text" data-aos="zoom-out-up" data-aos-duration="3000">
                 <h1>Nave es cultura</h1>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis soluta ex debitis numquam, sed enim? Quasi magnam distinctio placeat laboriosam totam! Incidunt, molestias iusto libero modi quasi cupiditate cum vitae obcaecati? Obcaecati perspiciatis voluptatem, in autem quis animi provident neque? Est quae ab dicta commodi, eius facilis consectetur doloremque repellat.</p>
+                <p>Cada una de nuestras obras fue pensada, elaborada y es vendida haciendo parte a los artistas que la inspiran, a quienes fueron inspirados y para quienes las pensamos.</p>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis soluta ex debitis numquam, sed enim? Quasi magnam distinctio placeat laboriosam totam! Incidunt, molestias iusto libero modi quasi cupiditate cum vitae obcaecati? Obcaecati perspiciatis voluptatem, in autem quis animi provident neque? Est quae ab dicta commodi, eius facilis consectetur doloremque repellat.</p>
+                <p>De la misma manera que hacemos parte a diferentes artistas de nuestras obras, también se llevan su parte y laburamos su publicidad. Estamos convencidos que las Naves se vuelan en equipo y ayudándonos entre todos.</p>
+
+                <p>La Cultura Nacional es capital de todos y de todas, nosotros solo lo distribuímos.
+                </p>
+
             </article>
 
         </section>
@@ -146,6 +155,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!--Script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

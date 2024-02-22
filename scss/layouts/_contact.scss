@@ -18,26 +18,24 @@
             border: 2px solid $BaseRed;
             border-radius: 8px;
         }
+
+        .form-control,
+        .form-select,
+        .form-control:focus {
+            background-color: $BackgroundColor;
+            color: $BaseText;
+            border-color: $BaseText;
+        }
+    
+        .form-check-input {
+            background-color: $BackgroundColor;
+        }
+    
+        .form-check-input:checked {
+            background-color: $DarkRed;
+            border-color: $BaseRed;
+        }
     }
-
-    .form-control,
-    .form-select,
-    .form-control:focus {
-        background-color: $BackgroundColor;
-        color: $BaseText;
-        border-color: $BaseText;
-    }
-
-    .form-check-input {
-        background-color: $BackgroundColor;
-    }
-
-    .form-check-input:checked {
-        background-color: $DarkRed;
-        border-color: $BaseRed;
-    }
-
-
 }
 
 .faq-container {
