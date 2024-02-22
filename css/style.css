@@ -106,6 +106,7 @@ main {
 .bg-darkred .nav-link {
   color: #C9CEBD;
   border-bottom: 10px solid transparent;
+  transition: 1s;
 }
 .bg-darkred .nav-link:hover {
   border-bottom: 10px solid #0c181d;

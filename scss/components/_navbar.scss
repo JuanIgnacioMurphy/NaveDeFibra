@@ -26,11 +26,27 @@
     .nav-link {
         color: $BaseText;
         border-bottom: 10px solid transparent;
+        transition: 1s;
+
 
         &:hover {
             border-bottom: 10px solid $BackgroundColor;
         }
     }
+
+    // .nav-link {
+    //     color: $BaseText;
+    //     background-color: rgb(61, 11, 11);
+    //     padding: 10px;
+    //     background-position: 0% 100%;
+    //     background-repeat: no-repeat;
+    //     background-size: 0% 100%;
+    //     transition: background-size .5s;
+
+    //     &:hover {
+    //         background-size: 100% 100%;
+    //     }
+
 
     .offcanvas-header {
         background-color: $DarkRed;
@@ -42,8 +58,3 @@
     transform: rotate(-30deg);
     transition: 1s;
 }
-
-
-
-
-
