@@ -57,7 +57,6 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -200,6 +199,8 @@ footer .footer-content a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 100px 20px 10px 80px;
 }
 .hero .hero-card .hero-bilboard .otoño-bilboard {
@@ -209,6 +210,8 @@ footer .footer-content a {
   margin-bottom: 0;
   padding: 0;
   line-height: 0.7;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 .hero .hero-card .hero-bilboard .invierno-bilboard {
   font-family: "abril";
@@ -217,6 +220,8 @@ footer .footer-content a {
   margin-bottom: 0;
   padding: 0;
   line-height: 0.7;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 .hero .hero-card .hero-bilboard .año-bilboard {
   font-family: "abril";
@@ -225,13 +230,14 @@ footer .footer-content a {
   margin-bottom: 0;
   padding: 0;
   line-height: 0.7;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 .hero .hero-card .hero-bilboard p {
   font-family: "poppins";
   font-size: 25px;
   color: #C9CEBD;
   margin-top: 40px;
-  text-align: center;
 }
 
 /* Estilos del Sidekick */
@@ -423,13 +429,36 @@ footer .footer-content a {
   height: 100%;
   max-height: 350px;
   max-width: 350px;
-  position: relative;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: end;
   border-radius: 8px;
   border: 1px solid white;
+}
+.grid-container .grid .box .b1 {
+  grid-area: a1;
+}
+.grid-container .grid .box .b2 {
+  grid-area: a2;
+}
+.grid-container .grid .box .b3 {
+  grid-area: a3;
+}
+.grid-container .grid .box .b4 {
+  grid-area: a4;
+}
+.grid-container .grid .box .b5 {
+  grid-area: a5;
+}
+.grid-container .grid .box .b6 {
+  grid-area: a6;
+}
+.grid-container .grid .box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .grid-container .grid .box h3 {
   position: absolute;
@@ -442,14 +471,6 @@ footer .footer-content a {
   font-size: 30px;
   padding: 5px;
   margin: 10px;
-}
-.grid-container .grid .box img {
-  width: 100%;
-  height: 100%;
-  max-width: 350px;
-  max-height: 350px;
-  object-fit: cover;
-  border-radius: 8px;
 }
 .grid-container .grid .box .btn-galery {
   margin: 10px;
@@ -484,24 +505,6 @@ footer .footer-content a {
   background-color: #0c181d;
   color: #C9CEBD;
   border: 2px solid rgba(74, 36, 46, 0.7058823529);
-}
-.grid-container .grid .b1 {
-  grid-area: a1;
-}
-.grid-container .grid .b2 {
-  grid-area: a2;
-}
-.grid-container .grid .b3 {
-  grid-area: a3;
-}
-.grid-container .grid .b4 {
-  grid-area: a4;
-}
-.grid-container .grid .b5 {
-  grid-area: a5;
-}
-.grid-container .grid .b6 {
-  grid-area: a6;
 }
 
 .goods-details {
@@ -596,10 +599,7 @@ footer .footer-content a {
   border: 2px solid #992034;
   border-radius: 8px;
   justify-content: center;
-}
-.info-container .info-logo {
-  width: 100%;
-  height: 100%;
+  align-items: center;
 }
 .info-container .info-bilboard {
   font-size: 15px;
@@ -673,6 +673,13 @@ footer .footer-content a {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+}
+.info-poster-text .info-poster-title {
+  font-family: "Abril";
+  color: #C9CEBD;
+  font-size: 50px;
+  padding: 15px;
+  margin: 10px;
 }
 
 /* Estilos de shop */
@@ -786,7 +793,6 @@ footer .footer-content a {
     margin-top: 40px;
     align-self: center;
     justify-self: center;
-    padding: 30px 0 0 0;
   }
   .sidekick {
     padding-top: 40px;
@@ -812,8 +818,33 @@ footer .footer-content a {
   .extras .poster {
     width: 100%;
   }
+  .grid-container .grid {
+    padding: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
+  }
+}
+.info-container .info-logo {
+  align-self: center;
+  justify-self: center;
+}
+
+@media (max-width: 992px) {
+  .info-container {
+    flex-direction: column;
+  }
+  .info-poster-text {
+    width: 80%;
+    height: 80%;
+  }
 }
 @media (max-width: 768px) {
+  main {
+    align-items: center;
+    justify-content: center;
+  }
   .hero {
     flex-direction: column;
     margin: 0;
@@ -829,10 +860,27 @@ footer .footer-content a {
     width: 80%;
   }
   .hero .hero-card .hero-bilboard {
+    width: 100%;
     margin: 0;
     align-self: center;
     justify-self: center;
-    padding: 0px 0 0 0;
+    justify-content: center;
+  }
+  .grid-container {
+    margin: 0;
+  }
+  .grid {
+    width: 100%;
+    border: none;
+  }
+  .goods-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .goods-details .item-card-v1,
+  .goods-details .item-card-v2,
+  .goods-details .item-card-v3 {
+    width: 90%;
   }
   .form-container {
     flex-direction: column;
@@ -840,8 +888,13 @@ footer .footer-content a {
     gap: 40px;
     margin-top: 40px;
     width: 100%;
+    margin: 0;
   }
-  .data-form {
+  .form-container .data-form {
+    width: 100%;
+    margin: 0;
+  }
+  .form-container h2 {
     width: 100%;
   }
   .map {
@@ -853,12 +906,20 @@ footer .footer-content a {
     align-items: center;
     margin-top: 0;
   }
-  .contact-extras {
+  .faq-container .contact-extras {
     flex-direction: column;
     align-items: center;
   }
-  .item-card {
+  .faq-container .contact-extras .item-card {
     width: 100%;
+  }
+  .info-poster-text {
+    width: 80%;
+    height: 80%;
+    font-size: 15px;
+  }
+  .info-poster-text .info-poster-title {
+    font-size: 30px;
   }
   .shop-container h2 {
     margin: 10px;
@@ -874,7 +935,18 @@ footer .footer-content a {
     font-weight: bold;
   }
 }
+.folow-container .follow-box {
+  flex-direction: column;
+}
+.folow-container .follow-box p {
+  width: 100%;
+}
+
 @media (max-width: 540px) {
+  container {
+    margin: 0;
+    padding: 0;
+  }
   h1 {
     font-size: 50px;
   }
@@ -884,6 +956,62 @@ footer .footer-content a {
   .footer-content {
     flex-direction: column;
     align-items: center;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero .hero-card {
+    width: 100%;
+  }
+  .hero .hero-card .hero-carousel {
+    width: 100%;
+  }
+  .hero .hero-card .hero-bilboard {
+    width: 100%;
+  }
+  .hero .hero-card .hero-bilboard .otoño-bilboard {
+    font-size: 90px;
+  }
+  .hero .hero-card .hero-bilboard .invierno-bilboard {
+    font-size: 60px;
+  }
+  .hero .hero-card .hero-bilboard .año-bilboard {
+    font-size: 90px;
+  }
+  .grid-container .grid .box {
+    transition: 0.5s;
+  }
+  .grid-container .grid .box h3 {
+    font-size: 15px;
+  }
+  .grid-container .grid .box h3:hover {
+    font-size: 15px;
+  }
+  .grid-container .grid .box .btn-galery {
+    font-size: 15px;
+  }
+  .grid-container .grid .box .btn-galery:hover {
+    font-size: 15px;
+  }
+  .grid-container .grid .box:hover .btn-galery {
+    font-size: 15px;
+  }
+  .info-logo img {
+    width: 300px;
+    height: 100%;
+  }
+  .info-poster {
+    flex-direction: column;
+  }
+  .info-poster .info-poster-text {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+  .info-poster .info-poster-text .info-poster-title {
+    font-size: 30px;
   }
   .shop-container {
     margin-top: 10px;

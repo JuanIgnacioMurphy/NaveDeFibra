@@ -7,11 +7,7 @@
     border: 2px solid $BaseRed;
     border-radius: 8px;
     justify-content: center;
-
-    .info-logo {
-        width: 100%;
-        height: 100%;
-    }
+    align-items: center;
 
     .info-bilboard {
         font-size: 15px;
@@ -101,6 +97,14 @@
         flex-direction: column;
         justify-content: center;
         padding: 10px;
+
+        .info-poster-title {
+            font-family: $TitleFont;
+            color: $BaseText;
+            font-size: 50px;
+            padding: 15px;
+            margin: 10px;
+        }
     }
 
 }
