@@ -278,43 +278,39 @@ footer .footer-content a {
 
 /* Estilos de los extras */
 .extras {
-  margin: 40px 0 40px 0;
+  margin: 40px 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   width: 100%;
 }
-.extras .poster {
-  display: flex;
+.extras .poster-flaco {
   width: 48%;
   border-radius: 8px;
+  background: url(../../assets/images/Flaco.jpg);
+  margin: 0;
+  padding: 20px;
 }
-.extras .poster .poster-img {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.extras .poster-haedo {
+  width: 48%;
   border-radius: 8px;
+  background: url(../../assets/images/Haedo.jpg);
+  margin: 0;
+  padding: 20px;
 }
-.extras .poster .poster-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.extras .poster-pulp {
+  width: 48%;
   border-radius: 8px;
+  background: url(../../assets/images/pulp-fiction.jpg);
+  margin: 0;
+  padding: 20px;
 }
-.extras .poster .poster-img .poster-text {
-  background-color: #111;
-  opacity: 0.5;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.extras .poster-mural {
+  width: 48%;
+  border-radius: 8px;
+  background: url(../../assets/images/mesi-maradona.jpg);
+  margin: 0;
+  padding: 20px;
 }
 
 .player {
@@ -374,6 +370,7 @@ footer .footer-content a {
 .faq-container .contact-extras .item-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 320px;
   padding: 10px;
   margin: 0;
@@ -664,6 +661,7 @@ footer .footer-content a {
 .info-poster-text {
   position: absolute;
   background-color: rgba(74, 36, 46, 0.7058823529);
+  border-radius: 10px;
   color: #fffffa;
   width: 60%;
   height: 60%;
