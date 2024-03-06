@@ -7,6 +7,10 @@
   font-family: "Poppins";
   src: url(../assets/fonts/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: "Delicious";
+  src: url(../assets/fonts/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf);
+}
 @keyframes appear {
   0% {
     opacity: 0;
@@ -58,6 +62,7 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-height: 100%;
 }
 
 .main-h1 {
@@ -278,39 +283,48 @@ footer .footer-content a {
 
 /* Estilos de los extras */
 .extras {
-  margin: 40px 0;
+  margin: 40px 0 40px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   width: 100%;
 }
-.extras .poster-flaco {
+.extras .poster {
+  display: flex;
   width: 48%;
   border-radius: 8px;
-  background: url(../../assets/images/Flaco.jpg);
-  margin: 0;
-  padding: 20px;
 }
-.extras .poster-haedo {
-  width: 48%;
+.extras .poster .poster-img {
+  color: #C9CEBD;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
-  background: url(../../assets/images/Haedo.jpg);
-  margin: 0;
-  padding: 20px;
+  transition: 1s;
 }
-.extras .poster-pulp {
-  width: 48%;
-  border-radius: 8px;
-  background: url(../../assets/images/pulp-fiction.jpg);
-  margin: 0;
-  padding: 20px;
+.extras .poster .poster-img:hover {
+  transform: scale(1.05);
 }
-.extras .poster-mural {
-  width: 48%;
+.extras .poster .poster-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
-  background: url(../../assets/images/mesi-maradona.jpg);
-  margin: 0;
-  padding: 20px;
+}
+.extras .poster .poster-img .poster-text {
+  background-color: #111;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .player {
@@ -465,7 +479,7 @@ footer .footer-content a {
   background-color: #992034;
   border-radius: 3px;
   border: 2px solid transparent;
-  font-size: 30px;
+  font-size: 24px;
   padding: 5px;
   margin: 10px;
 }
@@ -479,24 +493,22 @@ footer .footer-content a {
   color: transparent;
   border: 2px solid transparent;
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
 }
-.grid-container .grid .box:hover h3 {
-  color: transparent;
-  background-color: transparent;
+.grid-container .grid .box:hover .btn-galery {
+  background-color: #992034;
+  border: 2px solid transparent;
+  transform: translate(0px, -50px);
 }
 .grid-container .grid .box:hover .btn-galery {
   margin: 10px;
   padding: 5px;
   position: absolute;
-  /* width: 48%; */
   justify-self: end;
   align-self: end;
-  background-color: #992034;
-  border: 2px solid transparent;
   color: #C9CEBD;
-  font-size: 30px;
-  transition: 0.3s;
+  font-size: 24px;
+  transition: 0.7s;
 }
 .grid-container .grid .box:hover .btn-galery:hover {
   background-color: #0c181d;
@@ -924,11 +936,11 @@ footer .footer-content a {
     padding: 20px;
   }
   .footer-content {
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px;
   }
   .footer-content a {
-    font-size: 14px;
+    font-size: 16px;
     border: none;
     font-weight: bold;
   }
