@@ -93,6 +93,17 @@
         width: 80%;
         height: 80%;
     }
+
+    .follow-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .follow-box {
+            width: 100%;
+        }
+    }
 }
 
 ////////////////////////////////////////////////////Media queries 768px
@@ -221,18 +232,6 @@
         font-weight: bold;
     }
 }
-
-//Mediaquieries del shop 
-
-.folow-container {
-    .follow-box {
-        flex-direction: column;
-        p {
-            width: 100%;
-        }
-    }
-}
-
 
 ////////////////////////////////////////////////////Media queries para 540px
 @media (max-width:540px) {

@@ -11,6 +11,18 @@
   font-family: "Delicious";
   src: url(../assets/fonts/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf);
 }
+@font-face {
+  font-family: "Madimi";
+  src: url(../assets/fonts/MadimiOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Permanent";
+  src: url(../assets/fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: "Luckiest";
+  src: url(../assets/fonts/LuckiestGuy-Regular.ttf);
+}
 @keyframes appear {
   0% {
     opacity: 0;
@@ -20,6 +32,13 @@
     opacity: 1;
   }
 }
+.flexible, .follow-container .follow-box-vinilo, .follow-container .follow-box-botella, .follow-container .follow-box-campera, .follow-container .follow-box-almohadon, .follow-container .follow-box-taza, .follow-container .follow-box-gorra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 /*Reseteo*/
 * {
   padding: 0;
@@ -695,6 +714,7 @@ footer .footer-content a {
 /* Estilos de shop */
 .shop-container {
   margin-top: 20px;
+  margin-bottom: 40px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -754,34 +774,128 @@ footer .footer-content a {
 }
 
 .follow-container {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: rgba(13, 37, 48, 0.6235294118);
-  border: 2px solid #992034;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.follow-container .follow-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: space-around;
   gap: 20px;
-  font-size: 16px;
-  padding: 10px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 20px;
 }
-.follow-container .follow-box p {
+.follow-container .follow-box-gorra {
+  background: linear-gradient(222deg, rgba(58, 4, 13, 0.768627451), rgba(13, 37, 48, 0.6235294118)), url(../assets/images/gorra-diego.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 10px;
-  text-align: center;
-  width: 33%;
-  height: 100%;
-  background-color: rgba(74, 36, 46, 0.7058823529);
-  border: 2px solid #992034;
+  width: 30%;
+  height: 300px;
+  text-decoration: none;
   border-radius: 8px;
+  color: #0a412e;
+  font-family: "Luckiest";
+}
+.follow-container .follow-box-gorra h3 {
+  font-size: 40px;
+}
+.follow-container .follow-box-gorra:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.follow-container .follow-box-taza {
+  background: linear-gradient(222deg, rgba(58, 4, 13, 0.768627451), rgba(13, 37, 48, 0.6235294118)), url(../assets/images/taza-pulp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 30%;
+  height: 300px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #3b5a5a;
+  font-family: "Permanent";
+}
+.follow-container .follow-box-taza h3 {
+  font-size: 40px;
+}
+.follow-container .follow-box-taza:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.follow-container .follow-box-almohadon {
+  background: linear-gradient(222deg, rgba(58, 4, 13, 0.768627451), rgba(13, 37, 48, 0.6235294118)), url(../assets/images/almohadon-paul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 30%;
+  height: 300px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #3d032c;
+  font-family: "Madimi";
+}
+.follow-container .follow-box-almohadon h3 {
+  font-size: 40px;
+}
+.follow-container .follow-box-almohadon:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.follow-container .follow-box-campera {
+  background: linear-gradient(222deg, rgba(58, 4, 13, 0.768627451), rgba(13, 37, 48, 0.6235294118)), url(../assets/images/campera-tom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 30%;
+  height: 300px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #000000;
+  font-family: "Delicious";
+}
+.follow-container .follow-box-campera h3 {
+  font-size: 40px;
+}
+.follow-container .follow-box-campera:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.follow-container .follow-box-botella {
+  background: linear-gradient(222deg, rgba(58, 4, 13, 0.768627451), rgba(13, 37, 48, 0.6235294118)), url(../assets/images/botella-club.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 30%;
+  height: 300px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: rgba(168, 76, 33, 0.568627451);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.follow-container .follow-box-botella h3 {
+  font-size: 40px;
+}
+.follow-container .follow-box-botella:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.follow-container .follow-box-vinilo {
+  background: linear-gradient(222deg, rgba(58, 4, 13, 0.768627451), rgba(13, 37, 48, 0.6235294118)), url(../assets/images/vinilo-taylor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 30%;
+  height: 300px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #839094;
+  font-family: "Abril";
+}
+.follow-container .follow-box-vinilo h3 {
+  font-size: 40px;
+}
+.follow-container .follow-box-vinilo:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 /* Media Queries */
@@ -848,6 +962,15 @@ footer .footer-content a {
   .info-poster-text {
     width: 80%;
     height: 80%;
+  }
+  .follow-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .follow-container .follow-box {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -945,13 +1068,6 @@ footer .footer-content a {
     font-weight: bold;
   }
 }
-.folow-container .follow-box {
-  flex-direction: column;
-}
-.folow-container .follow-box p {
-  width: 100%;
-}
-
 @media (max-width: 540px) {
   container {
     margin: 0;

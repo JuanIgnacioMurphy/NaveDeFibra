@@ -22,6 +22,21 @@ $DarkRed:#4a242eb4;
     src: url(../assets/fonts/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Madimi';
+    src: url(../assets/fonts/MadimiOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Permanent';
+    src: url(../assets/fonts/PermanentMarker-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Luckiest';
+    src: url(../assets/fonts/LuckiestGuy-Regular.ttf);
+}
+
 //font-family: 'Abril', serif;
 //font-family: 'Poppins', sans-serif;
 
@@ -36,4 +51,15 @@ $styles: (
     v2: #ce910ea6,
     v3: #2b2a249f,
     v4: $DarkHover
+);
+
+// Variables para shop
+
+$fondos: (
+    gorra: url(../assets/images/gorra-diego.jpg),
+    taza: url(../assets/images/taza-pulp.jpg),
+    almohadon: url(../assets/images/almohadon-paul.jpg),
+    campera: url(../assets/images/campera-tom.jpg),
+    botella: url(../assets/images/botella-club.jpg),
+    vinilo: url(../assets/images/vinilo-taylor.jpg)
 );

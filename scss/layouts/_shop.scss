@@ -1,7 +1,8 @@
 /* Estilos de shop */
 
-.shop-container  {
+.shop-container {
     margin-top: 20px;
+    margin-bottom: 40px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -60,36 +61,62 @@
     margin: 20px;
 }
 
-.shop-closer    {
+.shop-closer {
     margin-top: 80px;
     padding: 60px;
 }
 
 .follow-container {
+    @include flex(row, center, space-around, 20px);
+    flex-wrap: wrap;
     margin-top: 40px;
     padding: 20px;
-    background-color: $DarkHover;
-    border: 2px solid $BaseRed;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 
-        .follow-box {
-            @include flex(row, space-between, center, 20px);
-            font-size: 16px;
+    @each $llave, $value in $fondos {
+        .follow-box-#{$llave} {
+            @extend .flexible;
+            background: linear-gradient(222deg, #3a040dc4, #0d25309f), $value;
+            background-size:cover;
+            background-repeat: no-repeat;
             padding: 10px;
-
-            p {
-                padding: 10px;
-                text-align: center;
-                width: 33%;
-                height: 100%;
-                background-color: $DarkRed;
-                border: 2px solid $BaseRed;
-                border-radius: 8px;
+            width: 30%;
+            height: 300px;
+            text-decoration: none;
+            border-radius: 8px;
+            
+            @if $llave == gorra {   
+                color: #0a412e;
+                font-family: 'Luckiest';
+            } @else if $llave == taza {
+                color: #3b5a5a;
+                font-family: 'Permanent';
+            } @else if $llave == almohadon {
+                color: #3d032c;
+                font-family: 'Madimi';
+            } @else if $llave == campera {
+                color: #000000;
+                font-family: 'Delicious';
+            } @else if $llave == botella {
+                color: #a84c2191;
+                font-family: Arial, Helvetica, sans-serif;
+            } @else if $llave == vinilo {
+                color: #839094;
+                font-family: 'Abril';
             }
-        }
+
+            h3 {
+                font-size: 40px;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                transition: .5s;
+            }
+        } 
+
+
+    }
+    
 }
+
+
