@@ -194,11 +194,10 @@ footer .footer-content a {
 .hero .hero-card {
   display: flex;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 100vw;
   height: auto;
   padding: 10px;
   margin-top: 40px;
-  gap: 10px;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -209,7 +208,7 @@ footer .footer-content a {
 }
 .hero .hero-card .hero-carousel {
   height: 100%;
-  width: 48%;
+  width: 45%;
 }
 .hero .hero-card .hero-carousel img {
   border-radius: 10px;
@@ -219,7 +218,7 @@ footer .footer-content a {
 }
 .hero .hero-card .hero-bilboard {
   height: 100%;
-  width: 48%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -792,7 +791,7 @@ footer .footer-content a {
   height: 300px;
   text-decoration: none;
   border-radius: 8px;
-  color: #0a412e;
+  color: #1ebb84;
   font-family: "Luckiest";
 }
 .follow-container .follow-box-gorra h3 {
@@ -811,7 +810,7 @@ footer .footer-content a {
   height: 300px;
   text-decoration: none;
   border-radius: 8px;
-  color: #3b5a5a;
+  color: #53acac;
   font-family: "Permanent";
 }
 .follow-container .follow-box-taza h3 {
@@ -830,7 +829,7 @@ footer .footer-content a {
   height: 300px;
   text-decoration: none;
   border-radius: 8px;
-  color: #3d032c;
+  color: #a83185;
   font-family: "Madimi";
 }
 .follow-container .follow-box-almohadon h3 {
@@ -849,7 +848,7 @@ footer .footer-content a {
   height: 300px;
   text-decoration: none;
   border-radius: 8px;
-  color: #000000;
+  color: #880505;
   font-family: "Delicious";
 }
 .follow-container .follow-box-campera h3 {
@@ -868,8 +867,8 @@ footer .footer-content a {
   height: 300px;
   text-decoration: none;
   border-radius: 8px;
-  color: rgba(168, 76, 33, 0.568627451);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #df6127;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .follow-container .follow-box-botella h3 {
   font-size: 40px;
@@ -887,7 +886,7 @@ footer .footer-content a {
   height: 300px;
   text-decoration: none;
   border-radius: 8px;
-  color: #839094;
+  color: #a9deee;
   font-family: "Abril";
 }
 .follow-container .follow-box-vinilo h3 {
@@ -900,23 +899,14 @@ footer .footer-content a {
 
 /* Media Queries */
 @media (max-width: 1208px) {
-  .hero {
-    flex-direction: column;
-    margin: 0;
+  .hero .hero-card .hero-bilboard .otoño-bilboard {
+    font-size: 80px;
   }
-  .hero .hero-card {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
+  .hero .hero-card .hero-bilboard .invierno-bilboard {
+    font-size: 61px;
   }
-  .hero .hero-card .hero-carousel {
-    width: 80%;
-  }
-  .hero .hero-card .hero-bilboard {
-    margin-top: 40px;
-    align-self: center;
-    justify-self: center;
+  .hero .hero-card .hero-bilboard .año-bilboard {
+    font-size: 90px;
   }
   .sidekick {
     padding-top: 40px;
@@ -956,6 +946,15 @@ footer .footer-content a {
 }
 
 @media (max-width: 992px) {
+  .hero .hero-card {
+    flex-direction: column;
+  }
+  .hero .hero-card .hero-carousel {
+    width: 90%;
+  }
+  .hero .hero-card .hero-bilboard {
+    width: 90%;
+  }
   .info-container {
     flex-direction: column;
   }
@@ -1094,15 +1093,17 @@ footer .footer-content a {
   }
   .hero .hero-card .hero-bilboard {
     width: 100%;
+    padding: 50px;
+    margin: auto;
   }
   .hero .hero-card .hero-bilboard .otoño-bilboard {
-    font-size: 90px;
+    font-size: 75px;
   }
   .hero .hero-card .hero-bilboard .invierno-bilboard {
-    font-size: 60px;
+    font-size: 45px;
   }
   .hero .hero-card .hero-bilboard .año-bilboard {
-    font-size: 90px;
+    font-size: 70px;
   }
   .grid-container .grid .box {
     transition: 0.5s;

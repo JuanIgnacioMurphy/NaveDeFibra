@@ -4,24 +4,42 @@
 @media (max-width:1208px) {
 
     //Media queries del index
+    // .hero {
+    //     flex-direction: column;
+    //     margin: 0;
+
+    //     .hero-card {
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+    //         border: none;
+
+    //         .hero-carousel {
+    //             width: 80%;
+    //         }
+
+    //         .hero-bilboard {
+    //             margin-top: 40px;
+    //             align-self: center;
+    //             justify-self: center;
+    //         }
+    //     }
+    // }
     .hero {
-        flex-direction: column;
-        margin: 0;
-
         .hero-card {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border: none;
-
-            .hero-carousel {
-                width: 80%;
-            }
-
             .hero-bilboard {
-                margin-top: 40px;
-                align-self: center;
-                justify-self: center;
+                .otoño-bilboard {
+                    font-size: 80px;
+                }
+
+                .invierno-bilboard {
+                    font-size: 61px;
+                }
+
+                .año-bilboard {
+                    font-size: 90px;
+                }
+
             }
         }
     }
@@ -85,6 +103,23 @@
 ///////////////////////////////////////////////// Media queries 992px
 
 @media (max-width:992px) {
+
+
+    .hero {
+        .hero-card {
+            flex-direction: column;
+
+            .hero-carousel {
+                width: 90%;
+            }
+
+            .hero-bilboard {
+                width: 90%;
+            }
+
+        }
+    }
+
     .info-container {
         flex-direction: column;
     }
@@ -268,17 +303,19 @@
 
             .hero-bilboard {
                 width: 100%;
+                padding: 50px;
+                margin: auto;
 
                 .otoño-bilboard {
-                    font-size: 90px;
+                    font-size: 75px;
                 }
 
                 .invierno-bilboard {
-                    font-size: 60px;
+                    font-size: 45px;
                 }
 
                 .año-bilboard {
-                    font-size: 90px;
+                    font-size: 70px;
                 }
 
             }
